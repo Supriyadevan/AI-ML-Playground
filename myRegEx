@@ -1,0 +1,15 @@
+import re
+import camelcase
+
+txt = "The rain in Spain"
+x = re.search("^The.*Spain$", txt)
+print(x)
+
+y = "hello my name is dumbi"
+print(camelcase.CamelCase().hump(y))
+
+quantity = 3
+itemno = 567
+price = 49
+myorder = "I want {} pieces of item number {} for {:.2f} dollars."
+print(myorder.format(quantity, itemno, price))

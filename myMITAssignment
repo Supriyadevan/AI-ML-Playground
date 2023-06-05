@@ -1,0 +1,21 @@
+def interpower(base,exp,result):
+    if exp > 0:
+        result = result * base
+        exp = exp - 1
+        return (interpower(base,exp,result))
+
+    else:
+        result = result * 1
+        return result
+
+result = 1
+print(interpower(2,5,1))
+
+
+
+
+
+
+
+  
+
