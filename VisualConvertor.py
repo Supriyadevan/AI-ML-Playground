@@ -19,7 +19,6 @@ add_button = sg.Button("Convert")
 output_label = sg.Text("", key="Output")
 
 add_button2 = sg.Button("Exit")
-#Exit2 = sg.Text("", key = "Exit2")
 
 window = sg.Window('Meter Convertor',
                    layout = [[label1,label1input],
