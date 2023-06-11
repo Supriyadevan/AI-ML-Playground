@@ -18,14 +18,20 @@ label2input = sg.Input(key = "Inches")
 add_button = sg.Button("Convert")
 output_label = sg.Text("", key="Output")
 
+add_button2 = sg.Button("Exit")
+#Exit2 = sg.Text("", key = "Exit2")
+
 window = sg.Window('Meter Convertor',
                    layout = [[label1,label1input],
                             [label2,label2input],
-                            [add_button,output_label]])
+                            [add_button,output_label,add_button2]])
 while True:
     event, values = window.read()
-    if event == sg.WINDOW_CLOSED:
-        break
+    match event:
+            case sg.WINDOW_CLOSED:
+                break
+            case "Exit":
+                break
 
     print(event, values)
 
