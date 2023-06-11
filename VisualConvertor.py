@@ -33,12 +33,14 @@ while True:
                 break
 
     print(event, values)
+    try:
+        EnteredFeet = float(values["Feet"])
+        EnteredInches = float(values["Inches"])
+        Result = convert(EnteredFeet, EnteredInches)
 
-    EnteredFeet = float(values["Feet"])
-    EnteredInches = float(values["Inches"])
-    Result = convert(EnteredFeet, EnteredInches)
-
-    window["Output"].update(value=f"{Result} m", text_color="white")
+        window["Output"].update(value=f"{Result} m", text_color="white")
+    except ValueError:
+        sg.popup("Please provide two numbers.", font=("Helvetica", 10))
 
 #OuncestoMilliliters
 
