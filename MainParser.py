@@ -5,6 +5,7 @@ import random
 user_input = input("Enter a lower bound and an upper bound divided a comma (e.g., 2,10)")
 
 # Parse the user string by calling the parse function
+# pass the user input into the parser
 parsed = parse(user_input)
 
 # Pick a random int between the two numbers
