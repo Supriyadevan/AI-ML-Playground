@@ -11,5 +11,4 @@ parsed = parse(user_input)
 # Pick a random int between the two numbers
 rand = random.randint(parsed['lower_bound'], parsed['upper_bound'])
 
-
 print(rand)
